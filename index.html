@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+        <title>Lorem Ipsum</title>
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet" />
+        <style>
+            body {
+                font-family: "Work Sans", sans-serif;
+                font-weight: 300;
+                background-color: rgba(240, 240, 240, 1);
+                color: rgba(170, 170, 170, 1);
+            }
+
+            body::-webkit-scrollbar {
+                width: 0.4rem;
+                scrollbar-color: rgba(200, 200, 200, 1) rgba(240, 240, 240, 1);
+            }
+
+            body::-webkit-scrollbar-track {
+                background: rgba(240, 240, 240, 1);
+            }
+            body::-webkit-scrollbar-thumb {
+                background-color: rgba(200, 200, 200, 1);
+            }
+            body::-webkit-scrollbar-thumb:hover {
+                background-color: rgba(190, 190, 190, 1);
+            }
+
+            a {
+                color: rgba(150, 150, 150, 1);
+            }
+
+.faseuno{
+  fill:red;
+}
+
+.fasedos{
+  fill:black;
+}
+
+            svg polygon {
+                fill: #ddd;
+                stroke: #444;
+                stroke-miterlimit: 10;
+            }
+
+            svg:hover {
+                cursor: grab;
+            }
+
+            svg:hover polygon {
+                fill: #fff;
+                transition: all 0.4s ease;
+            }
+
+            svg g#modulo-alunizaje {
+                /* por defecto, se esconde */
+                display: none;
+            }
+
+
+            svg:hover polygon#torre-salvamento {
+                transform: translate(0, -6vh);
+                transition: transform 0.1s ease;
+            }
+
+            svg:hover g#apolo {
+                transform: translate(0, -4vh);
+            }
+            svg:hover g#monito {
+                transform: translate(0, -6vh);
+            }
+
+
+            svg:hover g#modulo-alunizaje {
+                /* con mouse encima del svg, se muestra */
+                display: inherit;
+            }
+
+            svg:hover polygon#garage-modulo-alunizaje {
+                /* con mouse encima del svg, se esconde */
+                display: none;
+            }
+
+            svg:hover polygon#propulsor-tercera-etapa {
+                transform: translate(0, 1vh);
+                transition: transform 0.2s ease;
+            }
+
+            svg:hover polygon#cono-empalme {
+                transform: translate(0, 6vh);
+            }
+
+            svg:hover polygon#segunda-etapa {
+                transform: translate(0, 7vh);
+            }
+
+            svg:hover polygon#anillo-empalme {
+                transform: translate(0, 11vh);
+            }
+
+            svg:hover polygon#primera-etapa {
+                transform: translate(0, 12vh);
+            }
+
+            figure{
+                margin:1rem 0 5rem 0;
+            }
+
+            figure img {
+                width: 100%;
+                height: auto;
+            }
+
+            figure figcaption{
+                padding:0.5rem 0;
+                text-align: center;
+                font-size: 90%;
+                letter-spacing: 0.05rem;
+            }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-11 pt-5">
+                        <p class="px-1">
+                            Silvio Arribas <span class="float-right"><a href="https://github.com/profesorfaco/dno075-2020">Infografía Digital</a> <span class="d-none d-lg-inline">&bull; Lunes 14 de septiembre, 2020</span></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-11 text-center pt-5">
+                    <h1>Saturno V</h1>
+                    <h2>El cohete de las misiones Apolo</h2>
+                </div>
+                <div class="col-4 col-lg-2">
+                    <svg x="0px" y="0px" viewBox="0 0 100 900" xml:space="preserve">
+                        <g id="saturno_v">
+                            <g id="apolo">
+                                <polygon id="modulo-mando" points="55,117 45,117 34,132 66,132"/>
+                                <polygon id="modulo-servicio" points="34,132 34,162 35,165 45,165 43,178 57,178 55,165 65,165 66,162 66,132"/>
+                            </g>
+                            <polygon id="torre-salvamento" class="faseuno" points="54,97 52,94 52,52 50,50 48,52 48,94 46,97 45,117 55,117"/>
+                            <polygon id="propulsor-tercera-etapa" points="75,219 25,219 25,308 47,314 42,323 42,333 58,333 58,323 53,314 75,308"/>
+                            <polygon id="cono-empalme" class="faseuno" points="75,308 25,308 12,345 88,345"/>
+                            <polygon id="segunda-etapa" points="11,470 20,475 27,475 21.8,480 21,490 38,490 37,480 32,475 47,475 42,480 41,490 59,490 58.4,480 53,475 68,475 63,480 62,490 79,490 78,480 73,475 80,475 89,470 88,345 12,345"/>
+                            <polygon id="anillo-empalme" class="faseuno" points="11,470 10,530 90,530 89,470"/>
+                            <polygon id="primera-etapa" points="90,530 10,530 10,715 5,720 5,732 12,735 12,740 1,750 1,760 8,760 5,770 34,770 33,775 67,775 66,770 95,770 92,760 99,760 99,750 88,740 88,735 95,732 95,720 90,715"/>
+                            <polygon id="garage-modulo-alunizaje" points="25,219 34,162 66,162 75,219"/>
+                        </g>
+                        <g id="modulo-alunizaje">
+                            <polygon id="abierto-derecha" class="fasedos" points="99,218 94,163 79,162 74,215"/>
+                            <polygon id="abierto-izquierda" class="fasedos" points="1,218 26,215 21,162 6,163"/>
+                            <polygon id="modulo-lunar" class="fasedos" points="68,210 63,198 60,197 59,191 57,190 57,186 55,182 45,182 43,186 43,190 41,191 40,197 37,198 32,210 29,210 29,212 36,212 36,210 34,210 38,200 39,206 46,208 45,210 48,210 48,214 46,214 46,216 53,216 53,214 51,214 51,210 54.1,210 53,208 61,206 62,200 66,210 64,210 64,212 71,212 71,210"/>
+
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            	 viewBox="0 0 160 200" style="enable-background:new 0 0 160 200;" xml:space="preserve">
+                            <g>
+                            	<polygon points="33.3,20 32.9,20 32.9,24.5 33.3,23.8 	"/>
+                            	<path d="M33.3,13.5c0-0.6,0.5-1.1,1.1-1.1h5.5c0.6,0,1.1,0.5,1.1,1.1v3.3h0.4v-3.3c0-0.8-0.7-1.5-1.5-1.5h-4.5v-1.2
+                            		c0-0.1-0.1-0.2-0.2-0.2S35,10.7,35,10.8V12h-0.6c-0.8,0-1.5,0.7-1.5,1.5v3.3h0.4V13.5z"/>
+                            	<path d="M37.8,26.1h-1.4c-0.1,0.1-0.1,0.1-0.2,0.2l-0.1,0.2h1.9L38,26.3C38,26.2,37.9,26.1,37.8,26.1z"/>
+                            	<path d="M47.4,19.6c-1,0-1.8,0.8-1.8,1.8v2.4c0,0.5-0.4,0.9-0.9,0.9c-0.5,0-0.9-0.4-0.9-0.9V23c0-0.9-0.7-1.6-1.6-1.6h-0.8V20H41
+                            		v3.8l0.4,0.7v-2.8h0.8c0.7,0,1.2,0.5,1.2,1.2v0.8c0,0.7,0.6,1.3,1.3,1.3c0.7,0,1.3-0.6,1.3-1.3v-2.4c0-0.8,0.6-1.4,1.4-1.4
+                            		c0.1,0,0.2-0.1,0.2-0.2C47.6,19.7,47.5,19.6,47.4,19.6z"/>
+                            	<g>
+                            		<path d="M48.9,20h-0.4c-0.1,0-0.2-0.1-0.2-0.2c0-0.1,0.1-0.2,0.2-0.2h0.4c0.1,0,0.2,0.1,0.2,0.2C49.1,19.9,49,20,48.9,20z"/>
+                            	</g>
+                            	<path d="M37.1,22.2h-1.5c-0.1,0-0.2,0.1-0.2,0.2c0,0.1,0.1,0.2,0.2,0.2h1.5c0.1,0,0.2-0.1,0.2-0.2C37.4,22.3,37.3,22.2,37.1,22.2z"
+                            		/>
+                            	<path d="M38.6,22.2h-0.3c-0.1,0-0.2,0.1-0.2,0.2c0,0.1,0.1,0.2,0.2,0.2h0.3c0.1,0,0.2-0.1,0.2-0.2C38.8,22.3,38.7,22.2,38.6,22.2z"
+                            		/>
+                            	<path d="M43.9,17.2h-4c0.2-0.4,0.3-0.8,0.3-1.2c0-1.7-1.4-3.1-3.1-3.1c-1.7,0-3.1,1.4-3.1,3.1c0,0.4,0.1,0.8,0.3,1.2h-4
+                            		c-0.3,0-0.6,0.1-0.9,0.4c-0.2,0.2-0.4,0.5-0.4,0.9c0,0.7,0.5,1.2,1.2,1.2H34V23c0,0.2-0.1,0.5-0.2,0.7l-2.9,5
+                            		c-0.2,0.3-0.3,0.8-0.2,1.1c0.1,0.4,0.3,0.7,0.7,0.9c0,0,0,0,0,0c0.7,0.4,1.6,0.2,2-0.6l2.4-4.1c0.1-0.2,0.3-0.4,0.5-0.5
+                            		s0.5-0.2,0.7-0.2c0.5,0,1,0.3,1.2,0.7l2.3,4.1c0.3,0.5,0.8,0.7,1.3,0.7c0.3,0,0.5-0.1,0.7-0.2c0.3-0.2,0.6-0.5,0.7-0.9
+                            		s0.1-0.8-0.2-1.1l-2.9-5c-0.1-0.2-0.2-0.4-0.2-0.7v-3.4H44c0.3,0,0.6-0.1,0.9-0.4c0.2-0.2,0.4-0.5,0.4-0.9
+                            		C45.2,17.8,44.6,17.2,43.9,17.2z M43.9,19.2h-0.6v-1.6h0.6c0.4,0,0.8,0.4,0.8,0.8c0,0.2-0.1,0.4-0.2,0.6S44.1,19.2,43.9,19.2z
+                            		 M43,29.7c-0.1,0.3-0.3,0.5-0.5,0.7c-0.5,0.3-1.2,0.1-1.5-0.4l-2.3-4.1c-0.3-0.6-0.9-0.9-1.6-0.9c-0.3,0-0.6,0.1-0.9,0.3
+                            		c-0.3,0.2-0.5,0.4-0.7,0.7L33.2,30c-0.3,0.5-0.9,0.7-1.5,0.4c0,0,0,0,0,0c-0.2-0.1-0.4-0.4-0.5-0.6c-0.1-0.3,0-0.6,0.1-0.8l2.9-5
+                            		c0.2-0.3,0.2-0.6,0.2-0.9v-3.6c0-0.1-0.1-0.2-0.2-0.2h-2.9v-1.6h3.1c0.5,0.9,1.5,1.4,2.6,1.4c1.1,0,2-0.6,2.6-1.4h3.2v1.6H40
+                            		c-0.1,0-0.2,0.1-0.2,0.2V23c0,0.3,0.1,0.6,0.2,0.9l2.9,5C43.1,29.2,43.1,29.5,43,29.7z M29.6,18.4c0-0.2,0.1-0.4,0.2-0.6
+                            		c0.2-0.2,0.3-0.2,0.6-0.2H31v1.6h-0.6C29.9,19.2,29.6,18.9,29.6,18.4z M39.8,16c0,1.5-1.2,2.7-2.7,2.7c-1.5,0-2.7-1.2-2.7-2.7
+                            		s1.2-2.7,2.7-2.7C38.6,13.3,39.8,14.5,39.8,16z"/>
+                            	<path d="M37.1,18.3c1.2,0,2.2-1,2.2-2.2c0-1.1-0.8-1.8-2.2-1.8c-1.4,0-2.2,0.7-2.2,1.8C35,17.3,35.9,18.3,37.1,18.3z M38.9,16.1
+                            		c0,1-0.8,1.8-1.8,1.8c-1,0-1.8-0.8-1.8-1.8c0-1.2,1.2-1.4,1.8-1.4C37.7,14.7,38.9,14.8,38.9,16.1z"/>
+                            	<path d="M38.6,19.7h-3c-0.1,0-0.2,0.1-0.2,0.2v1.5c0,0.1,0.1,0.2,0.2,0.2h3c0.1,0,0.2-0.1,0.2-0.2v-1.5
+                            		C38.8,19.8,38.7,19.7,38.6,19.7z M38.4,21.2h-2.5v-1.1h2.5C38.4,20.1,38.4,21.2,38.4,21.2z"/>
+                            </g>
+                            </svg>
+</svg>
+
+                    </svg>
+                </div>
+                <div class="col-11">
+                    <h4 class="text-center mb-3">Lorem ipsum dolor sit amet</h4>
+                    <p class="text-justify px-1">Consectetur adipiscing elit. Mauris et bibendum eros. Integer pulvinar erat eget interdum rutrum. Proin ipsum tellus, congue in turpis sit amet, consequat porta lectus. Duis at nunc nec ipsum rutrum malesuada. Morbi sagittis ultrices ipsum et ullamcorper. Vivamus interdum lectus et ornare pharetra. Suspendisse eu mi justo. Nullam ullamcorper nulla vel nisi laoreet consectetur. Suspendisse finibus elit dignissim orci interdum, vel tincidunt nisi maximus.</p>
+                    <figure>
+                        <img src="anima.gif" class="shadow-sm">
+                        <figcaption>Lorem ipsum dolor sit amet</figcaption>
+                    </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
